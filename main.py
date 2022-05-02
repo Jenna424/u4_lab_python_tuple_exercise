@@ -29,3 +29,18 @@ print('I was born in {}, {} - population of {}'.format(
 # "population = 58000"
 for key in home_town:
     print('{} = {}'.format(key, home_town[key]))
+
+# Create an empty list named cohort
+# Using a for loop, add one dictionary to the cohort list for each student name. Each dictionary should have this shape
+# {
+#    'student': 'Tina',
+#    'fav_food' 'Cheeseburger'
+#  }
+# Iterate over cohort printing out each element.
+cohort = []
+for index in range(0, len(students)):
+    cohort.append({
+        'student': students[index],
+        'fav_food': foods[index]})
+for student in cohort:
+    print(student)
