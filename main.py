@@ -10,3 +10,6 @@ foods = ('apple', 'banana', 'orange')
 # Use a for loop to print out the string "food goes here is a good food"
 for food in foods:
     print('{} is a good food'.format(food))
+# Using a for loop, print just the last two food strings from foods
+for index in range(1, 3):
+    print(foods[index])
