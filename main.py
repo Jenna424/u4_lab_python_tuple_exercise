@@ -23,3 +23,9 @@ home_town = {
 }
 print('I was born in {}, {} - population of {}'.format(
     home_town['city'], home_town['state'], home_town['population']))
+# Iterate over the key: value pairs in home_town and print a string for each item, for example:
+# "city = Arcadia"
+# "state = California"
+# "population = 58000"
+for key in home_town:
+    print('{} = {}'.format(key, home_town[key]))
