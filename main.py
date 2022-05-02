@@ -13,3 +13,13 @@ for food in foods:
 # Using a for loop, print just the last two food strings from foods
 for index in range(1, 3):
     print(foods[index])
+# Create a dictionary named home_town containing the keys of city, state and population
+# Print a string with this format:
+# "I was born in city, state - population of population"
+home_town = {
+    'city': 'Westfield',
+    'state': 'New Jersey',
+    'population': 500
+}
+print('I was born in {}, {} - population of {}'.format(
+    home_town['city'], home_town['state'], home_town['population']))
