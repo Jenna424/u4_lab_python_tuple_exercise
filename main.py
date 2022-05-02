@@ -6,7 +6,7 @@ print(students[1])
 print(students[-1])
 
 # Create a tuple named foods containing the same number of foods (strings) as there are names in the students list
-foods = ('apple', 'banana', 'orange')
+foods = ('apple', 'banana', 'orange', 'kiwi')
 # Use a for loop to print out the string "food goes here is a good food"
 for food in foods:
     print('{} is a good food'.format(food))
@@ -51,3 +51,6 @@ for student in cohort:
 awesome_students = ['{} is awesome!'.format(student) for student in students]
 for string in awesome_students:
     print(string)
+# Using the tuple foods and list comprehension within a for loop, print each food string that contains the letter a.
+foods_containing_a = [food for food in foods if 'a' in food]
+print(foods_containing_a)
